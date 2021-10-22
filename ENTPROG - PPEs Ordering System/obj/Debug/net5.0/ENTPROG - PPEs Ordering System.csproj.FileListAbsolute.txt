@@ -38,3 +38,43 @@ C:\Users\gabriel\Desktop\ENTPROG - PPEs Ordering System\obj\Debug\net5.0\ref\ENT
 C:\Users\gabriel\Desktop\ENTPROG - PPEs Ordering System\obj\Debug\net5.0\ENTPROG - PPEs Ordering System.pdb
 C:\Users\gabriel\Desktop\ENTPROG - PPEs Ordering System\obj\Debug\net5.0\ENTPROG - PPEs Ordering System.genruntimeconfig.cache
 C:\Users\gabriel\Desktop\ENTPROG - PPEs Ordering System\obj\Debug\net5.0\ENTPROG - PPEs Ordering System.csproj.CopyComplete
+D:\Documents\Benilde stuff\2nd Year\1st Term\ENTPROG\ENTPROG - PPEs Ordering System\bin\Debug\net5.0\appsettings.Development.json
+D:\Documents\Benilde stuff\2nd Year\1st Term\ENTPROG\ENTPROG - PPEs Ordering System\bin\Debug\net5.0\appsettings.json
+D:\Documents\Benilde stuff\2nd Year\1st Term\ENTPROG\ENTPROG - PPEs Ordering System\bin\Debug\net5.0\ENTPROG - PPEs Ordering System.exe
+D:\Documents\Benilde stuff\2nd Year\1st Term\ENTPROG\ENTPROG - PPEs Ordering System\bin\Debug\net5.0\ENTPROG - PPEs Ordering System.deps.json
+D:\Documents\Benilde stuff\2nd Year\1st Term\ENTPROG\ENTPROG - PPEs Ordering System\bin\Debug\net5.0\ENTPROG - PPEs Ordering System.runtimeconfig.json
+D:\Documents\Benilde stuff\2nd Year\1st Term\ENTPROG\ENTPROG - PPEs Ordering System\bin\Debug\net5.0\ENTPROG - PPEs Ordering System.runtimeconfig.dev.json
+D:\Documents\Benilde stuff\2nd Year\1st Term\ENTPROG\ENTPROG - PPEs Ordering System\bin\Debug\net5.0\ENTPROG - PPEs Ordering System.dll
+D:\Documents\Benilde stuff\2nd Year\1st Term\ENTPROG\ENTPROG - PPEs Ordering System\bin\Debug\net5.0\ref\ENTPROG - PPEs Ordering System.dll
+D:\Documents\Benilde stuff\2nd Year\1st Term\ENTPROG\ENTPROG - PPEs Ordering System\bin\Debug\net5.0\ENTPROG - PPEs Ordering System.pdb
+D:\Documents\Benilde stuff\2nd Year\1st Term\ENTPROG\ENTPROG - PPEs Ordering System\bin\Debug\net5.0\ENTPROG - PPEs Ordering System.Views.dll
+D:\Documents\Benilde stuff\2nd Year\1st Term\ENTPROG\ENTPROG - PPEs Ordering System\bin\Debug\net5.0\ENTPROG - PPEs Ordering System.Views.pdb
+D:\Documents\Benilde stuff\2nd Year\1st Term\ENTPROG\ENTPROG - PPEs Ordering System\obj\Debug\net5.0\ENTPROG - PPEs Ordering System.csproj.AssemblyReference.cache
+D:\Documents\Benilde stuff\2nd Year\1st Term\ENTPROG\ENTPROG - PPEs Ordering System\obj\Debug\net5.0\ENTPROG - PPEs Ordering System.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documents\Benilde stuff\2nd Year\1st Term\ENTPROG\ENTPROG - PPEs Ordering System\obj\Debug\net5.0\ENTPROG - PPEs Ordering System.AssemblyInfoInputs.cache
+D:\Documents\Benilde stuff\2nd Year\1st Term\ENTPROG\ENTPROG - PPEs Ordering System\obj\Debug\net5.0\ENTPROG - PPEs Ordering System.AssemblyInfo.cs
+D:\Documents\Benilde stuff\2nd Year\1st Term\ENTPROG\ENTPROG - PPEs Ordering System\obj\Debug\net5.0\ENTPROG - PPEs Ordering System.csproj.CoreCompileInputs.cache
+D:\Documents\Benilde stuff\2nd Year\1st Term\ENTPROG\ENTPROG - PPEs Ordering System\obj\Debug\net5.0\ENTPROG - PPEs Ordering System.MvcApplicationPartsAssemblyInfo.cache
+D:\Documents\Benilde stuff\2nd Year\1st Term\ENTPROG\ENTPROG - PPEs Ordering System\obj\Debug\net5.0\ENTPROG - PPEs Ordering System.RazorAssemblyInfo.cache
+D:\Documents\Benilde stuff\2nd Year\1st Term\ENTPROG\ENTPROG - PPEs Ordering System\obj\Debug\net5.0\ENTPROG - PPEs Ordering System.RazorAssemblyInfo.cs
+D:\Documents\Benilde stuff\2nd Year\1st Term\ENTPROG\ENTPROG - PPEs Ordering System\obj\Debug\net5.0\staticwebassets\ENTPROG - PPEs Ordering System.StaticWebAssets.Manifest.cache
+D:\Documents\Benilde stuff\2nd Year\1st Term\ENTPROG\ENTPROG - PPEs Ordering System\obj\Debug\net5.0\staticwebassets\ENTPROG - PPEs Ordering System.StaticWebAssets.xml
+D:\Documents\Benilde stuff\2nd Year\1st Term\ENTPROG\ENTPROG - PPEs Ordering System\obj\Debug\net5.0\scopedcss\bundle\ENTPROG - PPEs Ordering System.styles.css
+D:\Documents\Benilde stuff\2nd Year\1st Term\ENTPROG\ENTPROG - PPEs Ordering System\obj\Debug\net5.0\ENTPROG - PPEs Ordering System.TagHelpers.input.cache
+D:\Documents\Benilde stuff\2nd Year\1st Term\ENTPROG\ENTPROG - PPEs Ordering System\obj\Debug\net5.0\ENTPROG - PPEs Ordering System.TagHelpers.output.cache
+D:\Documents\Benilde stuff\2nd Year\1st Term\ENTPROG\ENTPROG - PPEs Ordering System\obj\Debug\net5.0\ENTPROG - PPEs Ordering System.RazorCoreGenerate.cache
+D:\Documents\Benilde stuff\2nd Year\1st Term\ENTPROG\ENTPROG - PPEs Ordering System\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+D:\Documents\Benilde stuff\2nd Year\1st Term\ENTPROG\ENTPROG - PPEs Ordering System\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
+D:\Documents\Benilde stuff\2nd Year\1st Term\ENTPROG\ENTPROG - PPEs Ordering System\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
+D:\Documents\Benilde stuff\2nd Year\1st Term\ENTPROG\ENTPROG - PPEs Ordering System\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\Documents\Benilde stuff\2nd Year\1st Term\ENTPROG\ENTPROG - PPEs Ordering System\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+D:\Documents\Benilde stuff\2nd Year\1st Term\ENTPROG\ENTPROG - PPEs Ordering System\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+D:\Documents\Benilde stuff\2nd Year\1st Term\ENTPROG\ENTPROG - PPEs Ordering System\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+D:\Documents\Benilde stuff\2nd Year\1st Term\ENTPROG\ENTPROG - PPEs Ordering System\obj\Debug\net5.0\ENTPROG - PPEs Ordering System.RazorTargetAssemblyInfo.cache
+D:\Documents\Benilde stuff\2nd Year\1st Term\ENTPROG\ENTPROG - PPEs Ordering System\obj\Debug\net5.0\ENTPROG - PPEs Ordering System.RazorTargetAssemblyInfo.cs
+D:\Documents\Benilde stuff\2nd Year\1st Term\ENTPROG\ENTPROG - PPEs Ordering System\obj\Debug\net5.0\ENTPROG - PPEs Ordering System.Views.pdb
+D:\Documents\Benilde stuff\2nd Year\1st Term\ENTPROG\ENTPROG - PPEs Ordering System\obj\Debug\net5.0\ENTPROG - PPEs Ordering System.dll
+D:\Documents\Benilde stuff\2nd Year\1st Term\ENTPROG\ENTPROG - PPEs Ordering System\obj\Debug\net5.0\ref\ENTPROG - PPEs Ordering System.dll
+D:\Documents\Benilde stuff\2nd Year\1st Term\ENTPROG\ENTPROG - PPEs Ordering System\obj\Debug\net5.0\ENTPROG - PPEs Ordering System.pdb
+D:\Documents\Benilde stuff\2nd Year\1st Term\ENTPROG\ENTPROG - PPEs Ordering System\obj\Debug\net5.0\ENTPROG - PPEs Ordering System.genruntimeconfig.cache
+D:\Documents\Benilde stuff\2nd Year\1st Term\ENTPROG\ENTPROG - PPEs Ordering System\obj\Debug\net5.0\ENTPROG - PPEs Ordering System.csproj.CopyComplete
