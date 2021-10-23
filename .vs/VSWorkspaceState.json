@@ -4,9 +4,10 @@
     "\\ENTPROG - PPEs Ordering System",
     "\\ENTPROG - PPEs Ordering System\\Views",
     "\\ENTPROG - PPEs Ordering System\\Views\\Home",
+    "\\ENTPROG - PPEs Ordering System\\Views\\Shared",
     "\\ENTPROG - PPEs Ordering System\\wwwroot",
     "\\ENTPROG - PPEs Ordering System\\wwwroot\\images"
   ],
-  "SelectedNode": "\\ENTPROG - PPEs Ordering System\\Views\\Home\\Privacy.cshtml",
+  "SelectedNode": "\\ENTPROG - PPEs Ordering System\\Views\\Shared\\_Layout.cshtml",
   "PreviewInSolutionExplorer": false
 }
