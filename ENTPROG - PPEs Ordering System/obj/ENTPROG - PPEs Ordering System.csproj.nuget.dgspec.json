@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Documents\\Benilde stuff\\2nd Year\\1st Term\\ENTPROG\\ENTPROG - PPEs Ordering System\\ENTPROG - PPEs Ordering System.csproj": {}
+    "C:\\Users\\gabriel\\Source\\Repos\\gerardgabrielparinas\\PPEsOrderingSystem-OTIS2\\ENTPROG - PPEs Ordering System\\ENTPROG - PPEs Ordering System.csproj": {}
   },
   "projects": {
-    "D:\\Documents\\Benilde stuff\\2nd Year\\1st Term\\ENTPROG\\ENTPROG - PPEs Ordering System\\ENTPROG - PPEs Ordering System.csproj": {
+    "C:\\Users\\gabriel\\Source\\Repos\\gerardgabrielparinas\\PPEsOrderingSystem-OTIS2\\ENTPROG - PPEs Ordering System\\ENTPROG - PPEs Ordering System.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Documents\\Benilde stuff\\2nd Year\\1st Term\\ENTPROG\\ENTPROG - PPEs Ordering System\\ENTPROG - PPEs Ordering System.csproj",
+        "projectUniqueName": "C:\\Users\\gabriel\\Source\\Repos\\gerardgabrielparinas\\PPEsOrderingSystem-OTIS2\\ENTPROG - PPEs Ordering System\\ENTPROG - PPEs Ordering System.csproj",
         "projectName": "ENTPROG - PPEs Ordering System",
-        "projectPath": "D:\\Documents\\Benilde stuff\\2nd Year\\1st Term\\ENTPROG\\ENTPROG - PPEs Ordering System\\ENTPROG - PPEs Ordering System.csproj",
+        "projectPath": "C:\\Users\\gabriel\\Source\\Repos\\gerardgabrielparinas\\PPEsOrderingSystem-OTIS2\\ENTPROG - PPEs Ordering System\\ENTPROG - PPEs Ordering System.csproj",
         "packagesPath": "C:\\Users\\gabriel\\.nuget\\packages\\",
-        "outputPath": "D:\\Documents\\Benilde stuff\\2nd Year\\1st Term\\ENTPROG\\ENTPROG - PPEs Ordering System\\obj\\",
+        "outputPath": "C:\\Users\\gabriel\\Source\\Repos\\gerardgabrielparinas\\PPEsOrderingSystem-OTIS2\\ENTPROG - PPEs Ordering System\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gabriel\\AppData\\Roaming\\NuGet\\NuGet.Config",
