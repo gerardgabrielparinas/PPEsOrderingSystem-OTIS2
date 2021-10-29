@@ -1,6 +1,10 @@
 ﻿@page
 @model LoginModel
 
+@{
+    Layout = "_Layout2";
+}
+
 <script>
     function validateForm() {
         var x = document.forms["loginForm"].value;
@@ -16,7 +20,7 @@
     <div align="center">
         <div class="col-md-4">
             <section>
-                <img src="~/lib/pinkscribble.png" class="pinkscribble" style="left:430px; width:650px; height:auto"/>
+                <img src="~/lib/pinkscribble.png" class="pinkscribble" style="left:430px; width:650px; height:auto" />
                 <form id="account" method="post" name="loginForm" onsubmit="return validateForm()">
                     <div class="form-group" style="padding-bottom:20px;">
                         <input asp-for="Input.Email" placeholder="Username" class="form-control" />

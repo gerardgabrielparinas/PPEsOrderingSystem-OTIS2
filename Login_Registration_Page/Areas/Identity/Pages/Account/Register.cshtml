@@ -1,6 +1,10 @@
 ﻿@page
 @model RegisterModel
 
+@{
+    Layout = "_Layout2";
+}
+
 <script>
     function validateForm() {
         var x = document.forms["registerForm"].value;
@@ -58,7 +62,7 @@
                     <button type="submit" class="btn btn-primary" style="padding-left:100px; padding-right:100px">Register</button>
                 </div>
                 <div>
-                     <a asp-controller="Home" asp-action="Index" button type="submit" class="btn btn-primary" style="padding-left:114.5px; padding-right:114.5px">Back</a>
+                    <a asp-controller="Home" asp-action="Index" button type="submit" class="btn btn-primary" style="padding-left:114.5px; padding-right:114.5px">Back</a>
                 </div>
             </form>
         </div>
