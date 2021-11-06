@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gabriel\\Desktop\\Login_Registration_Page\\PPEsOrderingSystem.csproj": {}
+    "C:\\Users\\gabriel\\Desktop\\PPESOrderingSystem\\PPEsOrderingSystem.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gabriel\\Desktop\\Login_Registration_Page\\PPEsOrderingSystem.csproj": {
+    "C:\\Users\\gabriel\\Desktop\\PPESOrderingSystem\\PPEsOrderingSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gabriel\\Desktop\\Login_Registration_Page\\PPEsOrderingSystem.csproj",
+        "projectUniqueName": "C:\\Users\\gabriel\\Desktop\\PPESOrderingSystem\\PPEsOrderingSystem.csproj",
         "projectName": "PPEsOrderingSystem",
-        "projectPath": "C:\\Users\\gabriel\\Desktop\\Login_Registration_Page\\PPEsOrderingSystem.csproj",
+        "projectPath": "C:\\Users\\gabriel\\Desktop\\PPESOrderingSystem\\PPEsOrderingSystem.csproj",
         "packagesPath": "C:\\Users\\gabriel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gabriel\\Desktop\\Login_Registration_Page\\obj\\",
+        "outputPath": "C:\\Users\\gabriel\\Desktop\\PPESOrderingSystem\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gabriel\\AppData\\Roaming\\NuGet\\NuGet.Config",

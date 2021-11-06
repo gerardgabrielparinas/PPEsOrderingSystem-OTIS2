@@ -1,9 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Login_Registration_Page\\Views",
-    "\\Login_Registration_Page\\Views\\Home"
+    "\\PPESOrderingSystem",
+    "\\PPESOrderingSystem\\Views",
+    "\\PPESOrderingSystem\\Views\\Home"
   ],
-  "SelectedNode": "\\Login_Registration_Page",
+  "SelectedNode": "\\PPESOrderingSystem\\Views\\Home\\Privacy.cshtml",
   "PreviewInSolutionExplorer": false
 }

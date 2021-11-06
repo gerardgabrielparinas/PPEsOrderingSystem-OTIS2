@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Login_Registration_Page.Models;
+using PPEsOrderingSystem.Models;
 
 namespace Login_Registration_Page.Data
 {
@@ -16,5 +17,7 @@ namespace Login_Registration_Page.Data
 
         }
         public DbSet<User> Items { get; set; }
+
+        public DbSet<Product> products { get; set; }
     }
 }
