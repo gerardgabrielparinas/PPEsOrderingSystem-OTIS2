@@ -5,16 +5,6 @@
     Layout = "_Layout2";
 }
 
-<script>
-    function validateForm() {
-        var x = document.forms["loginForm"].value;
-        if (x == "" || x == null) {
-            alert("Invalid or incomplete information.");
-            return false;
-        }
-    }
-</script>
-
 <body style="margin-top: 100px; background-color: darkmagenta;">
     <h1 align="center">Login</h1>
     <div align="center">
@@ -23,10 +13,13 @@
                 <img src="~/lib/pinkscribble.png" class="pinkscribble" style="left:430px; width:650px; height:auto" />
                 <form id="account" method="post" name="loginForm" onsubmit="return validateForm()">
                     <div class="form-group" style="padding-bottom:20px;">
+                        <div asp-validation-summary="All" class="text-danger"></div>
                         <input asp-for="Input.Email" placeholder="Username" class="form-control" />
+                        <span asp-validation-for="Input.Email" class="text-danger"></span>
                     </div>
                     <div class="form-group" style="padding-bottom:20px;">
                         <input asp-for="Input.Password" placeholder="Password" class="form-control" />
+                        <span asp-validation-for="Input.Password" class="text-danger"></span>
                     </div>
                     <div class="form-group" style="padding-bottom:20px;">
                         <div class="checkbox" align="left">
