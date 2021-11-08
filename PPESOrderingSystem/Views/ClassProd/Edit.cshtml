@@ -1,0 +1,46 @@
+﻿@model PPEsOrderingSystem.Models.ClassProducts
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1 class="fa fa-edit">Edit Product</h1>
+<li class="fa-li fa fa-flag-checkered">Item</li>
+<hr />
+<div class="row">
+    <div class="col-md-4" style="background-color:moccasin">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="ProductID" />
+            <div class="form-group">
+                <label asp-for="ProductName" class="control-label"></label>
+                <input asp-for="ProductName" class="form-control" />
+                <span asp-validation-for="ProductName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Price" class="control-label"></label>
+                <input asp-for="Price" class="form-control" />
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+
+            <div class="form-group fa fa-save">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a class="tn btn-sm btn-info fa fa-backward" asp-action="Index">
+        Back to Product List
+    </a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

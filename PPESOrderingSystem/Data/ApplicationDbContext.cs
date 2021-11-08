@@ -18,6 +18,8 @@ namespace Login_Registration_Page.Data
         }
         public DbSet<User> Items { get; set; }
 
+        public DbSet<ClassProducts> Class { get; set; }
+
         public DbSet<Product> products { get; set; }
     }
 }

@@ -8104,19 +8104,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Ryan Lim\\.nuget\\packages\\": {}
+    "C:\\Users\\gksch\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Desktop\\PPEsOrderingSystem-OTIS2\\PPESOrderingSystem\\PPEsOrderingSystem.csproj",
+      "projectUniqueName": "C:\\Users\\gksch\\Source\\Repos\\gerardgabrielparinas\\PPEsOrderingSystem-OTIS2\\PPESOrderingSystem\\PPEsOrderingSystem.csproj",
       "projectName": "PPEsOrderingSystem",
-      "projectPath": "D:\\Desktop\\PPEsOrderingSystem-OTIS2\\PPESOrderingSystem\\PPEsOrderingSystem.csproj",
-      "packagesPath": "C:\\Users\\Ryan Lim\\.nuget\\packages\\",
-      "outputPath": "D:\\Desktop\\PPEsOrderingSystem-OTIS2\\PPESOrderingSystem\\obj\\",
+      "projectPath": "C:\\Users\\gksch\\Source\\Repos\\gerardgabrielparinas\\PPEsOrderingSystem-OTIS2\\PPESOrderingSystem\\PPEsOrderingSystem.csproj",
+      "packagesPath": "C:\\Users\\gksch\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\gksch\\Source\\Repos\\gerardgabrielparinas\\PPEsOrderingSystem-OTIS2\\PPESOrderingSystem\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Ryan Lim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\gksch\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8207,7 +8207,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
       }
     }
   }

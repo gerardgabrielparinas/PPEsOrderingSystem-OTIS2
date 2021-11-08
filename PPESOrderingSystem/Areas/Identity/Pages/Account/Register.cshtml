@@ -27,6 +27,16 @@
                         <span asp-validation-for="Input.LastName" class="text-danger"></span>
                     </div>
                 </div>
+                <div class="form-group" style="padding-bottom:20px">
+                    <div style="float:left; padding-right:10px; padding-bottom:20px" class="col-md-6">
+                        <input asp-for="Input.Password" placeholder="Password" class="form-control" />
+                        <span asp-validation-for="Input.Password" class="text-danger"></span>
+                    </div>
+                    <div style="float:right;  padding-left:10px; padding-bottom:20px" class="col-md-6">
+                        <input asp-for="Input.ConfirmPassword" placeholder="Confirm Password" class="form-control" />
+                        <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+                    </div>
+                </div>
                 <div style="padding-bottom:20px" class="form-group">
                     <input asp-for="Input.MobileNumber" placeholder="Mobile Number" class="form-control" />
                     <span asp-validation-for="Input.MobileNumber" class="text-danger"></span>
