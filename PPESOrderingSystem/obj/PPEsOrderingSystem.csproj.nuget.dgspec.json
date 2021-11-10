@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gksch\\Source\\Repos\\gerardgabrielparinas\\PPEsOrderingSystem-OTIS2\\PPESOrderingSystem\\PPEsOrderingSystem.csproj": {}
+    "C:\\Users\\gksch\\source\\repos\\gerardgabrielparinas\\PPEsOrderingSystem-OTIS2\\PPESOrderingSystem\\PPEsOrderingSystem.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gksch\\Source\\Repos\\gerardgabrielparinas\\PPEsOrderingSystem-OTIS2\\PPESOrderingSystem\\PPEsOrderingSystem.csproj": {
+    "C:\\Users\\gksch\\source\\repos\\gerardgabrielparinas\\PPEsOrderingSystem-OTIS2\\PPESOrderingSystem\\PPEsOrderingSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gksch\\Source\\Repos\\gerardgabrielparinas\\PPEsOrderingSystem-OTIS2\\PPESOrderingSystem\\PPEsOrderingSystem.csproj",
+        "projectUniqueName": "C:\\Users\\gksch\\source\\repos\\gerardgabrielparinas\\PPEsOrderingSystem-OTIS2\\PPESOrderingSystem\\PPEsOrderingSystem.csproj",
         "projectName": "PPEsOrderingSystem",
-        "projectPath": "C:\\Users\\gksch\\Source\\Repos\\gerardgabrielparinas\\PPEsOrderingSystem-OTIS2\\PPESOrderingSystem\\PPEsOrderingSystem.csproj",
+        "projectPath": "C:\\Users\\gksch\\source\\repos\\gerardgabrielparinas\\PPEsOrderingSystem-OTIS2\\PPESOrderingSystem\\PPEsOrderingSystem.csproj",
         "packagesPath": "C:\\Users\\gksch\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gksch\\Source\\Repos\\gerardgabrielparinas\\PPEsOrderingSystem-OTIS2\\PPESOrderingSystem\\obj\\",
+        "outputPath": "C:\\Users\\gksch\\source\\repos\\gerardgabrielparinas\\PPEsOrderingSystem-OTIS2\\PPESOrderingSystem\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gksch\\AppData\\Roaming\\NuGet\\NuGet.Config",
