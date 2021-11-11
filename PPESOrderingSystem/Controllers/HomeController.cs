@@ -23,6 +23,11 @@ namespace Login_Registration_Page.Controllers
             return View();
         }
 
+        public IActionResult Home()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();
