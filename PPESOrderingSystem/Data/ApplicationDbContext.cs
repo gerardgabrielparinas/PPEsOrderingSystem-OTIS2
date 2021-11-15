@@ -21,5 +21,6 @@ namespace Login_Registration_Page.Data
         public DbSet<ClassProducts> Class { get; set; }
 
         public DbSet<Product> products { get; set; }
+        public DbSet<Contact> Contacts { get; set; }
     }
 }
