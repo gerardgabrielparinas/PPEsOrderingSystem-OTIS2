@@ -1,4 +1,6 @@
-﻿@{
+﻿@model PPEsOrderingSystem.Models.StoreViewModel
+@inject Login_Registration_Page.Data.ApplicationDbContext _context
+@{
     ViewData["Title"] = "Home Page";
 }
 
@@ -7,66 +9,20 @@
         <h1 class="display-4 text-white">Welcome to our Store</h1>
 
         <div class="row">
-            <div class="col-sm-6" style="width: 27rem; padding-left: 100px; margin-top: 40px;">
-                <div class="card" style="width: 16rem;">
-                    <img class="card-img-top" src="~/images/n95.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">N95 Masks</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">View Product</a>
+            @foreach (var item in Model.ProductList.OrderBy(p => p.Price).ToList())
+            {
+                <div class="col-sm-6">
+                    <div class="card">
+                        <img class="card-img-top" src="~/images/n95.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">@(item.ProductName)</h5>
+                            <p class="card-text">Php@(item.Price.ToString("N"))</p>
+                            <p class="card-text">@(item.Description)</p>
+                            <a href="#" class="btn btn-primary">View Product</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-sm-6" style="width: 27rem; padding-left: 100px; margin-top: 40px;">
-                <div class="card" style="width: 16rem;">
-                    <img class="card-img-top" src="~/images/family.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Rubbing Alcohol</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">View Product</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6" style="width: 27rem; padding-left: 100px; margin-top: 40px;">
-                <div class="card" style="width: 16rem;">
-                    <img class="card-img-top" src="~/images/faceshield.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">10pcs Face Shields</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">View Product</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6" style="width: 27rem; padding-left: 100px; margin-top: 40px;">
-                <div class="card" style="width: 16rem;">
-                    <img class="card-img-top" src="~/images/n95.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">View Product</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6" style="width: 27rem; padding-left: 100px; margin-top: 40px;">
-                <div class="card" style="width: 16rem;">
-                    <img class="card-img-top" src="~/images/n95.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">View Product</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6" style="width: 27rem; padding-left: 100px; margin-top: 40px;">
-                <div class="card" style="width: 16rem;">
-                    <img class="card-img-top" src="~/images/n95.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">View Product</a>
-                    </div>
-                </div>
-            </div>
+            }
         </div>
     </div>
 </body>

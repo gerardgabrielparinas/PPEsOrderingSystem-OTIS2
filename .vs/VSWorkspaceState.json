@@ -3,9 +3,10 @@
     "",
     "\\PPESOrderingSystem",
     "\\PPESOrderingSystem\\Areas",
+    "\\PPESOrderingSystem\\Models",
     "\\PPESOrderingSystem\\Views",
-    "\\PPESOrderingSystem\\Views\\Home"
+    "\\PPESOrderingSystem\\Views\\Contact"
   ],
-  "SelectedNode": "\\PPESOrderingSystem\\Views\\Home\\Privacy.cshtml",
+  "SelectedNode": "\\PPESOrderingSystem\\Models\\ClassProducts.cs",
   "PreviewInSolutionExplorer": false
 }

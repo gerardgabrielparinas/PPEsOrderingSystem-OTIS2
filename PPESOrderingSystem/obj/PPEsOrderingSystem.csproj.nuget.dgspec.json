@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Documents\\Benilde stuff\\2nd Year\\1st Term\\ENTPROG\\00FINALS BACKUPS\\BK-CURRENT\\PPESOrderingSystem\\PPEsOrderingSystem.csproj": {}
+    "C:\\Users\\gabriel\\Desktop\\PPESOrderingSystem\\PPEsOrderingSystem.csproj": {}
   },
   "projects": {
-    "D:\\Documents\\Benilde stuff\\2nd Year\\1st Term\\ENTPROG\\00FINALS BACKUPS\\BK-CURRENT\\PPESOrderingSystem\\PPEsOrderingSystem.csproj": {
+    "C:\\Users\\gabriel\\Desktop\\PPESOrderingSystem\\PPEsOrderingSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Documents\\Benilde stuff\\2nd Year\\1st Term\\ENTPROG\\00FINALS BACKUPS\\BK-CURRENT\\PPESOrderingSystem\\PPEsOrderingSystem.csproj",
+        "projectUniqueName": "C:\\Users\\gabriel\\Desktop\\PPESOrderingSystem\\PPEsOrderingSystem.csproj",
         "projectName": "PPEsOrderingSystem",
-        "projectPath": "D:\\Documents\\Benilde stuff\\2nd Year\\1st Term\\ENTPROG\\00FINALS BACKUPS\\BK-CURRENT\\PPESOrderingSystem\\PPEsOrderingSystem.csproj",
+        "projectPath": "C:\\Users\\gabriel\\Desktop\\PPESOrderingSystem\\PPEsOrderingSystem.csproj",
         "packagesPath": "C:\\Users\\gabriel\\.nuget\\packages\\",
-        "outputPath": "D:\\Documents\\Benilde stuff\\2nd Year\\1st Term\\ENTPROG\\00FINALS BACKUPS\\BK-CURRENT\\PPESOrderingSystem\\obj\\",
+        "outputPath": "C:\\Users\\gabriel\\Desktop\\PPESOrderingSystem\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gabriel\\AppData\\Roaming\\NuGet\\NuGet.Config",
