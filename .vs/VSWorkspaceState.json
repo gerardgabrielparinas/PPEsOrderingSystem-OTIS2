@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\PPESOrderingSystem",
+    "\\PPESOrderingSystem\\Areas",
+    "\\PPESOrderingSystem\\Views",
+    "\\PPESOrderingSystem\\Views\\Home"
   ],
-  "SelectedNode": "\\PPEsOrderingSystem.sln",
+  "SelectedNode": "\\PPESOrderingSystem\\Views\\Home\\Privacy.cshtml",
   "PreviewInSolutionExplorer": false
 }

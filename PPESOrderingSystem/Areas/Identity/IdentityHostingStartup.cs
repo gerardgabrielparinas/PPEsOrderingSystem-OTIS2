@@ -1,4 +1,5 @@
 ﻿using System;
+using Login_Registration_Page.Areas.Identity.Data;
 using Login_Registration_Page.Data;
 using Login_Registration_Page.Models;
 using Microsoft.AspNetCore.Hosting;
@@ -16,6 +17,20 @@ namespace Login_Registration_Page.Areas.Identity
         public void Configure(IWebHostBuilder builder)
         {
             builder.ConfigureServices((context, services) => {
+
+                services.AddDbContext<SampleAppContext>(options =>
+                options.UseSqlServer(
+                    context.Configuration.GetConnectionString("SampleAppContextConnection")));
+
+                services.AddIdentity<SampleAppUser, IdentityRole>(options => options.SignIn.RequireConfirmedAccount = true)
+                    .AddDefaultUI()
+                    .AddEntityFrameworkStores<SampleAppContext>()
+                    .AddDefaultTokenProviders();
+
+                services.AddScoped<IUserClaimsPrincipalFactory<SampleAppUser>,
+                    ApplicationUserClaimsPrincipalFactory
+                    >();
+
             });
         }
     }

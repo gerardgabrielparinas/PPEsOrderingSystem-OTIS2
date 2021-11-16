@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Joaquin Antonio\\OneDrive\\Desktop\\FINALS ENTPROG\\PPESOrderingSystem\\PPEsOrderingSystem.csproj": {}
+    "D:\\Documents\\Benilde stuff\\2nd Year\\1st Term\\ENTPROG\\00FINALS BACKUPS\\BK-CURRENT\\PPESOrderingSystem\\PPEsOrderingSystem.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Joaquin Antonio\\OneDrive\\Desktop\\FINALS ENTPROG\\PPESOrderingSystem\\PPEsOrderingSystem.csproj": {
+    "D:\\Documents\\Benilde stuff\\2nd Year\\1st Term\\ENTPROG\\00FINALS BACKUPS\\BK-CURRENT\\PPESOrderingSystem\\PPEsOrderingSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Joaquin Antonio\\OneDrive\\Desktop\\FINALS ENTPROG\\PPESOrderingSystem\\PPEsOrderingSystem.csproj",
+        "projectUniqueName": "D:\\Documents\\Benilde stuff\\2nd Year\\1st Term\\ENTPROG\\00FINALS BACKUPS\\BK-CURRENT\\PPESOrderingSystem\\PPEsOrderingSystem.csproj",
         "projectName": "PPEsOrderingSystem",
-        "projectPath": "C:\\Users\\Joaquin Antonio\\OneDrive\\Desktop\\FINALS ENTPROG\\PPESOrderingSystem\\PPEsOrderingSystem.csproj",
-        "packagesPath": "C:\\Users\\Joaquin Antonio\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Joaquin Antonio\\OneDrive\\Desktop\\FINALS ENTPROG\\PPESOrderingSystem\\obj\\",
+        "projectPath": "D:\\Documents\\Benilde stuff\\2nd Year\\1st Term\\ENTPROG\\00FINALS BACKUPS\\BK-CURRENT\\PPESOrderingSystem\\PPEsOrderingSystem.csproj",
+        "packagesPath": "C:\\Users\\gabriel\\.nuget\\packages\\",
+        "outputPath": "D:\\Documents\\Benilde stuff\\2nd Year\\1st Term\\ENTPROG\\00FINALS BACKUPS\\BK-CURRENT\\PPESOrderingSystem\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Joaquin Antonio\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\gabriel\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -109,7 +105,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }
