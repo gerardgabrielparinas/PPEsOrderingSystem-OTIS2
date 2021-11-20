@@ -3,10 +3,15 @@
     "",
     "\\PPESOrderingSystem",
     "\\PPESOrderingSystem\\Areas",
+    "\\PPESOrderingSystem\\Areas\\Data",
+    "\\PPESOrderingSystem\\Areas\\Identity",
+    "\\PPESOrderingSystem\\Areas\\Identity\\Pages",
+    "\\PPESOrderingSystem\\Areas\\Identity\\Pages\\Account",
     "\\PPESOrderingSystem\\Models",
     "\\PPESOrderingSystem\\Views",
-    "\\PPESOrderingSystem\\Views\\Contact"
+    "\\PPESOrderingSystem\\Views\\PPEs",
+    "\\PPESOrderingSystem\\Views\\Shared"
   ],
-  "SelectedNode": "\\PPESOrderingSystem\\Models\\ClassProducts.cs",
+  "SelectedNode": "\\PPESOrderingSystem\\Views\\PPEs\\ViewRoles.cshtml",
   "PreviewInSolutionExplorer": false
 }

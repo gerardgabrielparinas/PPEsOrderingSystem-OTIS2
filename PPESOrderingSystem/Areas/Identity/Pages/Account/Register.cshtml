@@ -3,6 +3,8 @@
 
 @{
     Layout = "_Layout2";
+    ViewData["Title"] = "Register";
+    var roles = (List<IdentityRole>)ViewData["roles"];
 }
 
 
@@ -35,6 +37,12 @@
                         <input asp-for="Input.ConfirmPassword" placeholder="Confirm Password" class="form-control" />
                         <span asp-validation-for="Input.ConfirmPassword" class="text-danger" style="font-size: 8px"></span>
                     </div>
+                </div>
+                <div style="padding-bottom:20px" class="form-group">
+                    <label asp-for="Input.UserRole"></label>
+                    <select asp-for="Input.UserRole" class="form-control" asp-items='new SelectList(roles,"Id","Name")'>
+                    </select>
+                    <span asp-validation-for="Input.UserRole" class="text-danger"></span>
                 </div>
                 <div style="padding-bottom:20px" class="form-group">
                     <input asp-for="Input.MobileNumber" placeholder="Mobile Number" class="form-control" />

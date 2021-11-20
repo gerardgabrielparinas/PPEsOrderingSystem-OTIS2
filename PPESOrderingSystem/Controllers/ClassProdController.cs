@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 using Login_Registration_Page.Data;
 using PPEsOrderingSystem.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace PPEsOrderingSystem.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class ClassProdController : Controller
     {
         private readonly ApplicationDbContext _context;
