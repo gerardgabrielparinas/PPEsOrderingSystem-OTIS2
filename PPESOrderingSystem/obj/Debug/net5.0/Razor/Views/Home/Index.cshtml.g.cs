@@ -26,8 +26,22 @@ using Login_Registration_Page.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "D:\Documents\Benilde stuff\2nd Year\1st Term\ENTPROG\00FINALS BACKUPS\BK-07\PPESOrderingSystem\Views\_ViewImports.cshtml"
+using PPEsOrderingSystem;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 4 "D:\Documents\Benilde stuff\2nd Year\1st Term\ENTPROG\00FINALS BACKUPS\BK-07\PPESOrderingSystem\Views\_ViewImports.cshtml"
+using PPEsOrderingSystem.Models;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"b51b3eccb9ab6ddd41565c21d839abc3e3a1b3a3", @"/Views/Home/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"1ff78fe48c62b23f35361be46419b6cc1a5a1cf9", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"a34d3b69b819bd29f3d946f45d4276f768f9c284", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("src", new global::Microsoft.AspNetCore.Html.HtmlString("~/lib/PPEsImage.jpg"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -75,9 +89,9 @@ using Login_Registration_Page.Models;
 #line hidden
 #nullable disable
             WriteLiteral("\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b51b3eccb9ab6ddd41565c21d839abc3e3a1b3a37309", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b51b3eccb9ab6ddd41565c21d839abc3e3a1b3a37772", async() => {
                 WriteLiteral("\r\n    ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "b51b3eccb9ab6ddd41565c21d839abc3e3a1b3a37571", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "b51b3eccb9ab6ddd41565c21d839abc3e3a1b3a38034", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -92,7 +106,7 @@ using Login_Registration_Page.Models;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n    <div class=\"text-left\">\r\n        <h1 class=\"display-4\" style=\"margin-top:50px; padding-bottom:100px; text-transform:capitalize; font-weight:900\">PPEs ORDERING SYSTEM</h1>\r\n    </div>\r\n    <div style=\"padding-right:600px; margin-top:90px\">\r\n        ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b51b3eccb9ab6ddd41565c21d839abc3e3a1b3a39012", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b51b3eccb9ab6ddd41565c21d839abc3e3a1b3a39475", async() => {
                     WriteLiteral("Login");
                 }
                 );
@@ -116,7 +130,7 @@ using Login_Registration_Page.Models;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n        ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b51b3eccb9ab6ddd41565c21d839abc3e3a1b3a311026", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b51b3eccb9ab6ddd41565c21d839abc3e3a1b3a311489", async() => {
                     WriteLiteral("Register");
                 }
                 );

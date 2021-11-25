@@ -26,8 +26,22 @@ using Login_Registration_Page.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "D:\Documents\Benilde stuff\2nd Year\1st Term\ENTPROG\00FINALS BACKUPS\BK-07\PPESOrderingSystem\Views\_ViewImports.cshtml"
+using PPEsOrderingSystem;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 4 "D:\Documents\Benilde stuff\2nd Year\1st Term\ENTPROG\00FINALS BACKUPS\BK-07\PPESOrderingSystem\Views\_ViewImports.cshtml"
+using PPEsOrderingSystem.Models;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"26ae23325e3d5929579c025ada16fdb896d95d83", @"/Views/Home/Privacy.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"1ff78fe48c62b23f35361be46419b6cc1a5a1cf9", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"a34d3b69b819bd29f3d946f45d4276f768f9c284", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_Privacy : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("card-img-top"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -83,7 +97,7 @@ Write(ViewData["Title"]);
 <p>This website serves as our Final Project in our Enterprise Programming - or ""ENTPROG"" class. It will Simulate an E-commerce website that sells Personal Protective Equipment such as Faceshields and Facemasks, As well as other products used for General Hygiene such as Alcohol, among Others. Granted that there may be other existing sites that already sell Hygiene Products and PPEs, but what will make ours different is the fact that our website will support local suppliers for the Said Products. Here, you can see the different stores and Suppliers along with the products they Offer.</p>
 
 ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "26ae23325e3d5929579c025ada16fdb896d95d836989", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "26ae23325e3d5929579c025ada16fdb896d95d837452", async() => {
                 WriteLiteral(@"
     <div class=""text-center"">
         <br /><br />
@@ -93,7 +107,7 @@ Write(ViewData["Title"]);
             <div class=""col-sm-6"" style=""width: 20rem; padding-left: 50px; margin-top: 30px;"">
                 <div class=""card"" style=""width: 16rem;"">
                     ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "26ae23325e3d5929579c025ada16fdb896d95d837541", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "26ae23325e3d5929579c025ada16fdb896d95d838004", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -119,7 +133,7 @@ Write(ViewData["Title"]);
             <div class=""col-sm-6"" style=""width: 20rem; padding-left: 50px; margin-top: 30px;"">
                 <div class=""card"" style=""width: 16rem;"">
                     ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "26ae23325e3d5929579c025ada16fdb896d95d839357", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "26ae23325e3d5929579c025ada16fdb896d95d839820", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -145,7 +159,7 @@ Write(ViewData["Title"]);
             <div class=""col-sm-6"" style=""width: 20rem; padding-left: 50px; margin-top: 30px;"">
                 <div class=""card"" style=""width: 16rem;"">
                     ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "26ae23325e3d5929579c025ada16fdb896d95d8311173", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "26ae23325e3d5929579c025ada16fdb896d95d8311636", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -171,7 +185,7 @@ Write(ViewData["Title"]);
             <div class=""col-sm-6"" style=""width: 20rem; padding-left: 50px; margin-top: 30px;"">
                 <div class=""card"" style=""width: 16rem;"">
                     ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "26ae23325e3d5929579c025ada16fdb896d95d8312987", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "26ae23325e3d5929579c025ada16fdb896d95d8313450", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();

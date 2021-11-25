@@ -1,0 +1,30 @@
+﻿@model PPEsOrderingSystem.Models.StoreViewModel
+@inject Login_Registration_Page.Data.ApplicationDbContext _context
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<body style="background-color: #c0a1ef;">
+    <div class="text-center">
+        <h1 class="display-4 text-white">Welcome to our Store</h1>
+
+        <div class="row">
+
+            @foreach (var item in Model.ProductList.OrderBy(p => p.Price).ToList())
+            {
+                <div class="col-sm-6" style="width: 27rem; padding-left: 100px; margin-top: 40px;">
+                    <div class="card" style="width: 16rem;">
+                        <img class="card-img-top" src="~/images/n95.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">@(item.ProductName)</h5>
+                            <p class="card-text">@(item.Description)</p>
+                            <a href="#" class="btn btn-primary">View Product</a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</body>
+
+

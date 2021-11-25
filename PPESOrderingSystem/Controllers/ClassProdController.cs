@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace PPEsOrderingSystem.Controllers
 {
-    [Authorize(Roles = "Admin")]
+    
     public class ClassProdController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -101,6 +101,5 @@ namespace PPEsOrderingSystem.Controllers
 
             return RedirectToAction("Index");
         }
-
     }
 }

@@ -1250,3 +1250,5 @@ D:\Documents\Benilde stuff\2nd Year\1st Term\ENTPROG\00FINALS BACKUPS\BK-07\PPES
 D:\Documents\Benilde stuff\2nd Year\1st Term\ENTPROG\00FINALS BACKUPS\BK-07\PPESOrderingSystem\obj\Debug\net5.0\PPEsOrderingSystem.Views.pdb
 D:\Documents\Benilde stuff\2nd Year\1st Term\ENTPROG\00FINALS BACKUPS\BK-07\PPESOrderingSystem\obj\Debug\net5.0\PPEsOrderingSystem.csproj.CopyComplete
 D:\Documents\Benilde stuff\2nd Year\1st Term\ENTPROG\00FINALS BACKUPS\BK-07\PPESOrderingSystem\obj\Debug\net5.0\PPEsOrderingSystem.genruntimeconfig.cache
+D:\Documents\Benilde stuff\2nd Year\1st Term\ENTPROG\00FINALS BACKUPS\BK-07\PPESOrderingSystem\obj\Debug\net5.0\Razor\Views\Cart\Index.cshtml.g.cs
+D:\Documents\Benilde stuff\2nd Year\1st Term\ENTPROG\00FINALS BACKUPS\BK-07\PPESOrderingSystem\obj\Debug\net5.0\Razor\Views\Store\Index.cshtml.g.cs

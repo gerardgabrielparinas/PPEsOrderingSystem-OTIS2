@@ -2,16 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\PPESOrderingSystem",
-    "\\PPESOrderingSystem\\Areas",
-    "\\PPESOrderingSystem\\Areas\\Data",
-    "\\PPESOrderingSystem\\Areas\\Identity",
-    "\\PPESOrderingSystem\\Areas\\Identity\\Pages",
-    "\\PPESOrderingSystem\\Areas\\Identity\\Pages\\Account",
-    "\\PPESOrderingSystem\\Models",
     "\\PPESOrderingSystem\\Views",
-    "\\PPESOrderingSystem\\Views\\PPEs",
     "\\PPESOrderingSystem\\Views\\Shared"
   ],
-  "SelectedNode": "\\PPESOrderingSystem\\Views\\PPEs\\ViewRoles.cshtml",
+  "SelectedNode": "\\PPESOrderingSystem\\Views\\Shared\\_Layout.cshtml",
   "PreviewInSolutionExplorer": false
 }

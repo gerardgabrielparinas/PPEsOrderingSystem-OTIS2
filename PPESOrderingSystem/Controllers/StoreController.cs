@@ -14,7 +14,7 @@ namespace PPEsOrderingSystem.Controllers
     public class StoreController : Controller
     {
         private readonly ApplicationDbContext _context;
-
+        
         public StoreController(ApplicationDbContext context)
         {
             _context = context;
@@ -31,6 +31,25 @@ namespace PPEsOrderingSystem.Controllers
             };
 
             return View(record);
+        }
+
+        public IActionResult Search()
+        {
+            var displaydata = _context.Class.ToList();
+            return View("Index", displaydata);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Search(String ProductSearch)
+        {
+            ViewData["GetSupplierDetails"] = ProductSearch;
+
+            var productquery = from x in _context.Class select x;
+            if (!String.IsNullOrEmpty(ProductSearch))
+            {
+                productquery = productquery.Where(x => x.ProductName.Contains(ProductSearch) || x.Description.Contains(ProductSearch));
+            }
+            return View("Index", await productquery.AsNoTracking().ToListAsync());
         }
     }
 }

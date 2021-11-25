@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "14J+Bcqkvy5i4+P3C1spTYovQ0Rmsb9SUu0dIk0ShuBHYf8RCN9DXqr4CLHD65xoIF/IIWM33o/+cxsKXz/jPw==",
+  "dgSpecHash": "AW5ZUzrjSIaAbx0jsaRbW4Llxz32jLJPKhWzg9a5tu63g1P9dbCu/Tiba72dk+OZifqpiBpOJwbjFUwDiylBAQ==",
   "success": true,
-  "projectFilePath": "D:\\Documents\\Benilde stuff\\2nd Year\\1st Term\\ENTPROG\\00FINALS BACKUPS\\BK-07\\PPESOrderingSystem\\PPEsOrderingSystem.csproj",
+  "projectFilePath": "C:\\Users\\gabriel\\Source\\Repos\\gerardgabrielparinas\\PPEsOrderingSystem-OTIS2\\PPESOrderingSystem\\PPEsOrderingSystem.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gabriel\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\gabriel\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",

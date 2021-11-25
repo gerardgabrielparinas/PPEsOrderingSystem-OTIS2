@@ -36,12 +36,7 @@ namespace Login_Registration_Page
             services.AddControllersWithViews();
             services.AddRazorPages();
 
-            services.AddAuthorization(options =>
-            {
-                options.AddPolicy("rolecreation", policy =>
-                policy.RequireRole("Admin")
-                );
-            });
+            services.AddSession();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -59,6 +54,8 @@ namespace Login_Registration_Page
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+
+            app.UseSession();
 
             app.UseRouting();
 
