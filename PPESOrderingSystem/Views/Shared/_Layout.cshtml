@@ -28,7 +28,10 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Contact" asp-action="Create"> Contact Us </a>
                         </li>
                         <li class="nav-item">
-                            <a id="seller" class="nav-link text-dark" asp-area="" asp-controller="ClassProd" asp-action="Index" Visible="<%# HttpContext.Current.User.IsInRole('Admin') %>">View your Store</a>
+                            @if (User.IsInRole("Admin") || User.IsInRole("Supplier"))
+                            {
+                                <a id="seller" class="nav-link text-dark" asp-area="" asp-controller="ClassProd" asp-action="Index">View your Store</a>
+                            }
                         </li>
                     </ul>
                     <form method="get" asp-controller="Store" asp-action="Search">

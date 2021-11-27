@@ -22,6 +22,9 @@ namespace PPEsOrderingSystem.Models
         [Required(ErrorMessage = "Required.")]
         public int Price { get; set; }
 
+        [Display(Name = "Image")]
+        public string ImagePath { get; set; }
+
         [Display(Name = "Date Added")]
         public DateTime DateAdded { get; set; }
 

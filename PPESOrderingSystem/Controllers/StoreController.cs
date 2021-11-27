@@ -7,10 +7,11 @@ using System.Threading.Tasks;
 using PPEsOrderingSystem.Models;
 using Login_Registration_Page.Data;
 using Microsoft.EntityFrameworkCore;
-
+using Microsoft.AspNetCore.Authorization;
 
 namespace PPEsOrderingSystem.Controllers
 {
+    [Authorize]
     public class StoreController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -19,7 +20,7 @@ namespace PPEsOrderingSystem.Controllers
         {
             _context = context;
         }
-
+        [Authorize]
         public IActionResult Index()
         {
             var products = _context.Class

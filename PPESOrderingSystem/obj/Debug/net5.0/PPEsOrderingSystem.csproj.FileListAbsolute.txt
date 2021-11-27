@@ -708,8 +708,6 @@ C:\Users\gabriel\Source\Repos\gerardgabrielparinas\PPEsOrderingSystem-OTIS2\PPES
 C:\Users\gabriel\Source\Repos\gerardgabrielparinas\PPEsOrderingSystem-OTIS2\PPESOrderingSystem\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\gabriel\Source\Repos\gerardgabrielparinas\PPEsOrderingSystem-OTIS2\PPESOrderingSystem\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\gabriel\Source\Repos\gerardgabrielparinas\PPEsOrderingSystem-OTIS2\PPESOrderingSystem\obj\Debug\net5.0\Razor\Views\PPEs\LoggedIn.cshtml.g.cs
-C:\Users\gabriel\Source\Repos\gerardgabrielparinas\PPEsOrderingSystem-OTIS2\PPESOrderingSystem\obj\Debug\net5.0\Razor\Views\Product\Create.cshtml.g.cs
-C:\Users\gabriel\Source\Repos\gerardgabrielparinas\PPEsOrderingSystem-OTIS2\PPESOrderingSystem\obj\Debug\net5.0\Razor\Views\Product\Index.cshtml.g.cs
 C:\Users\gabriel\Source\Repos\gerardgabrielparinas\PPEsOrderingSystem-OTIS2\PPESOrderingSystem\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\gabriel\Source\Repos\gerardgabrielparinas\PPEsOrderingSystem-OTIS2\PPESOrderingSystem\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\gabriel\Source\Repos\gerardgabrielparinas\PPEsOrderingSystem-OTIS2\PPESOrderingSystem\obj\Debug\net5.0\Razor\Views\Shared\_Layout2.cshtml.g.cs
@@ -1252,3 +1250,8 @@ D:\Documents\Benilde stuff\2nd Year\1st Term\ENTPROG\00FINALS BACKUPS\BK-07\PPES
 D:\Documents\Benilde stuff\2nd Year\1st Term\ENTPROG\00FINALS BACKUPS\BK-07\PPESOrderingSystem\obj\Debug\net5.0\PPEsOrderingSystem.genruntimeconfig.cache
 D:\Documents\Benilde stuff\2nd Year\1st Term\ENTPROG\00FINALS BACKUPS\BK-07\PPESOrderingSystem\obj\Debug\net5.0\Razor\Views\Cart\Index.cshtml.g.cs
 D:\Documents\Benilde stuff\2nd Year\1st Term\ENTPROG\00FINALS BACKUPS\BK-07\PPESOrderingSystem\obj\Debug\net5.0\Razor\Views\Store\Index.cshtml.g.cs
+C:\Users\gabriel\Source\Repos\gerardgabrielparinas\PPEsOrderingSystem-OTIS2\PPESOrderingSystem\obj\Debug\net5.0\Razor\Views\Cart\Index.cshtml.g.cs
+C:\Users\gabriel\Source\Repos\gerardgabrielparinas\PPEsOrderingSystem-OTIS2\PPESOrderingSystem\obj\Debug\net5.0\Razor\Views\Contact\Create.cshtml.g.cs
+C:\Users\gabriel\Source\Repos\gerardgabrielparinas\PPEsOrderingSystem-OTIS2\PPESOrderingSystem\obj\Debug\net5.0\Razor\Views\Role\Create.cshtml.g.cs
+C:\Users\gabriel\Source\Repos\gerardgabrielparinas\PPEsOrderingSystem-OTIS2\PPESOrderingSystem\obj\Debug\net5.0\Razor\Views\Role\Index.cshtml.g.cs
+C:\Users\gabriel\Source\Repos\gerardgabrielparinas\PPEsOrderingSystem-OTIS2\PPESOrderingSystem\obj\Debug\net5.0\Razor\Views\Store\Index.cshtml.g.cs

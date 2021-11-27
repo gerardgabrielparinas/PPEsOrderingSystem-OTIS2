@@ -2,9 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\PPESOrderingSystem",
+    "\\PPESOrderingSystem\\Controllers",
     "\\PPESOrderingSystem\\Views",
     "\\PPESOrderingSystem\\Views\\Shared"
   ],
-  "SelectedNode": "\\PPESOrderingSystem\\Views\\Shared\\_Layout.cshtml",
+  "SelectedNode": "\\PPESOrderingSystem\\Controllers\\ClassProdController.cs",
   "PreviewInSolutionExplorer": false
 }

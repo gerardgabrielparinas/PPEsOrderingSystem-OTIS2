@@ -7,10 +7,12 @@ using System.Threading.Tasks;
 using Login_Registration_Page.Data;
 using PPEsOrderingSystem.Models;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
+using System.IO;
 
 namespace PPEsOrderingSystem.Controllers
 {
-    
+    [Authorize(Roles = "Admin,Supplier")]
     public class ClassProdController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -32,7 +34,7 @@ namespace PPEsOrderingSystem.Controllers
         }
 
         [HttpPost]
-        public IActionResult Create(ClassProducts record)
+        public IActionResult Create(ClassProducts record, IFormFile ImagePath)
         {
             var item = new ClassProducts()
             {
@@ -42,6 +44,21 @@ namespace PPEsOrderingSystem.Controllers
                 DateAdded = DateTime.Now
 
             };
+
+            if (ImagePath != null)
+            {
+                if (ImagePath.Length > 0)
+                {
+                    var filePath = Path.Combine(Directory.GetCurrentDirectory(),
+                        "wwwroot/img/products", ImagePath.FileName);
+
+                    using (var stream = new FileStream(filePath, FileMode.Create))
+                    {
+                        ImagePath.CopyTo(stream);
+                    }
+                    item.ImagePath = ImagePath.FileName;
+                }
+            }
             _context.Class.Add(item);
             _context.SaveChanges();
 
