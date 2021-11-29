@@ -5,6 +5,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using PPEsOrderingSystem.Models;
 using Login_Registration_Page.Data;
+using System.Net.Mail;
+using System.Net;
 
 namespace PPEsOrderingSystem.Controllers
 {
@@ -30,18 +32,30 @@ namespace PPEsOrderingSystem.Controllers
         [HttpPost]
         public IActionResult Create(Contact record)
         {
-            var contact = new Contact()
+            MailMessage mail = new MailMessage()
             {
-                TicketNumber = record.TicketNumber,
-                FirstName = record.FirstName,
-                LastName = record.LastName,
-                Email = record.Email,
-                Message = record.Message
+                From = new MailAddress("benilde.web.development@gmail.com", "The Administrator")
             };
-            _context.Contacts.Add(contact);
-            _context.SaveChanges();
+            mail.To.Add(new MailAddress(record.Email));
 
-            return RedirectToAction("Index");
+            mail.Subject = "Inquiry from " + record.Sender + " (" + record.Subject + ") ";
+            string message = "Hello, " + record.Sender + "<br/><br/>" +
+                "We have recieved your inquiry. Here are the details: <br/><br/>" +
+                "Contact Number: " + record.ContactNo + "<br/>" +
+                "Message:<br/>" + record.Message + "<br/><br/>" +
+                "Please wait for our reply. Thank you.";
+
+            mail.Body = message;
+            mail.IsBodyHtml = true;
+
+            using SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587)
+            {
+                Credentials = new NetworkCredential("gaboparinas78@gmail.com", "rnbwtsuclfnizxzz"),
+                EnableSsl = true
+            };
+            smtp.Send(mail);
+            ViewBag.Message = "Inquiry Sent.";
+            return View();
         }
 
 
