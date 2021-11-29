@@ -1254,3 +1254,12 @@ C:\Users\gabriel\Source\Repos\gerardgabrielparinas\PPEsOrderingSystem-OTIS2\PPES
 C:\Users\gabriel\Source\Repos\gerardgabrielparinas\PPEsOrderingSystem-OTIS2\PPESOrderingSystem\obj\Debug\net5.0\Razor\Views\Role\Create.cshtml.g.cs
 C:\Users\gabriel\Source\Repos\gerardgabrielparinas\PPEsOrderingSystem-OTIS2\PPESOrderingSystem\obj\Debug\net5.0\Razor\Views\Role\Index.cshtml.g.cs
 C:\Users\gabriel\Source\Repos\gerardgabrielparinas\PPEsOrderingSystem-OTIS2\PPESOrderingSystem\obj\Debug\net5.0\Razor\Views\Store\Index.cshtml.g.cs
+C:\Users\gabriel\Source\Repos\gerardgabrielparinas\PPEsOrderingSystem-OTIS2\PPESOrderingSystem\bin\Debug\net5.0\System.Web.Mvc.dll
+C:\Users\gabriel\Source\Repos\gerardgabrielparinas\PPEsOrderingSystem-OTIS2\PPESOrderingSystem\bin\Debug\net5.0\System.Web.Razor.dll
+C:\Users\gabriel\Source\Repos\gerardgabrielparinas\PPEsOrderingSystem-OTIS2\PPESOrderingSystem\bin\Debug\net5.0\System.Web.Helpers.dll
+C:\Users\gabriel\Source\Repos\gerardgabrielparinas\PPEsOrderingSystem-OTIS2\PPESOrderingSystem\bin\Debug\net5.0\System.Web.WebPages.Deployment.dll
+C:\Users\gabriel\Source\Repos\gerardgabrielparinas\PPEsOrderingSystem-OTIS2\PPESOrderingSystem\bin\Debug\net5.0\System.Web.WebPages.Razor.dll
+C:\Users\gabriel\Source\Repos\gerardgabrielparinas\PPEsOrderingSystem-OTIS2\PPESOrderingSystem\bin\Debug\net5.0\System.Web.WebPages.dll
+C:\Users\gabriel\Source\Repos\gerardgabrielparinas\PPEsOrderingSystem-OTIS2\PPESOrderingSystem\bin\Debug\net5.0\Microsoft.Web.Infrastructure.dll
+C:\Users\gabriel\Source\Repos\gerardgabrielparinas\PPEsOrderingSystem-OTIS2\PPESOrderingSystem\obj\Debug\net5.0\Razor\Views\Details\Create.cshtml.g.cs
+C:\Users\gabriel\Source\Repos\gerardgabrielparinas\PPEsOrderingSystem-OTIS2\PPESOrderingSystem\obj\Debug\net5.0\Razor\Views\Details\Index.cshtml.g.cs

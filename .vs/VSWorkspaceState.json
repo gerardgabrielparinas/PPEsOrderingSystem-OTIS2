@@ -4,8 +4,10 @@
     "\\PPESOrderingSystem",
     "\\PPESOrderingSystem\\Controllers",
     "\\PPESOrderingSystem\\Data",
-    "\\PPESOrderingSystem\\Models"
+    "\\PPESOrderingSystem\\Models",
+    "\\PPESOrderingSystem\\Views",
+    "\\PPESOrderingSystem\\Views\\Contact"
   ],
-  "SelectedNode": "\\README.txt",
+  "SelectedNode": "\\PPESOrderingSystem\\PPEsOrderingSystem.sln",
   "PreviewInSolutionExplorer": false
 }
