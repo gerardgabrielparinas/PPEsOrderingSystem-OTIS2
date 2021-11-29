@@ -8,5 +8,7 @@ namespace PPEsOrderingSystem.Models
     public class StoreViewModel
     {
         public List<ClassProducts> ProductList { get; set; }
+
+        public List<Category> CategoryList { get; set; }
     }
 }

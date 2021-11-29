@@ -3,9 +3,9 @@
     "",
     "\\PPESOrderingSystem",
     "\\PPESOrderingSystem\\Controllers",
-    "\\PPESOrderingSystem\\Views",
-    "\\PPESOrderingSystem\\Views\\Shared"
+    "\\PPESOrderingSystem\\Data",
+    "\\PPESOrderingSystem\\Models"
   ],
-  "SelectedNode": "\\PPESOrderingSystem\\Controllers\\ClassProdController.cs",
+  "SelectedNode": "\\PPESOrderingSystem\\PPEsOrderingSystem.sln",
   "PreviewInSolutionExplorer": false
 }

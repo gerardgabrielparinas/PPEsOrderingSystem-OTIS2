@@ -31,11 +31,15 @@ namespace PPEsOrderingSystem.Models
         [Display(Name = "Date Modified")]
         public DateTime? DateModified { get; set; }
 
-        public ClassProducts find(int id)
-        {
-            var products = _context.Class.ToList();
-            var prod = products.Where(a => a.ProductID == id).FirstOrDefault();
-            return prod;
-        }
+        public virtual Category category { get; set; }
+
+        public int? Catid { get; set; }
+    }
+
+    public class Category
+    {
+        [Key]
+        public int CatId { get; set; }
+        public string Name { get; set; }
     }
 }

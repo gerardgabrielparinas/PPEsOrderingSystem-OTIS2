@@ -1250,7 +1250,6 @@ D:\Documents\Benilde stuff\2nd Year\1st Term\ENTPROG\00FINALS BACKUPS\BK-07\PPES
 D:\Documents\Benilde stuff\2nd Year\1st Term\ENTPROG\00FINALS BACKUPS\BK-07\PPESOrderingSystem\obj\Debug\net5.0\PPEsOrderingSystem.genruntimeconfig.cache
 D:\Documents\Benilde stuff\2nd Year\1st Term\ENTPROG\00FINALS BACKUPS\BK-07\PPESOrderingSystem\obj\Debug\net5.0\Razor\Views\Cart\Index.cshtml.g.cs
 D:\Documents\Benilde stuff\2nd Year\1st Term\ENTPROG\00FINALS BACKUPS\BK-07\PPESOrderingSystem\obj\Debug\net5.0\Razor\Views\Store\Index.cshtml.g.cs
-C:\Users\gabriel\Source\Repos\gerardgabrielparinas\PPEsOrderingSystem-OTIS2\PPESOrderingSystem\obj\Debug\net5.0\Razor\Views\Cart\Index.cshtml.g.cs
 C:\Users\gabriel\Source\Repos\gerardgabrielparinas\PPEsOrderingSystem-OTIS2\PPESOrderingSystem\obj\Debug\net5.0\Razor\Views\Contact\Create.cshtml.g.cs
 C:\Users\gabriel\Source\Repos\gerardgabrielparinas\PPEsOrderingSystem-OTIS2\PPESOrderingSystem\obj\Debug\net5.0\Razor\Views\Role\Create.cshtml.g.cs
 C:\Users\gabriel\Source\Repos\gerardgabrielparinas\PPEsOrderingSystem-OTIS2\PPESOrderingSystem\obj\Debug\net5.0\Razor\Views\Role\Index.cshtml.g.cs

@@ -21,14 +21,26 @@ namespace PPEsOrderingSystem.Controllers
             _context = context;
         }
         [Authorize]
-        public IActionResult Index()
+        public IActionResult Index(int? c)
         {
             var products = _context.Class
+                .Include(p => p.category)
+                .ToList();
+
+            if (c != null)
+            {
+                products = products.Where(p => p.Catid == (int)c)
+                    .ToList();
+            }
+
+            var categories = _context.Categories
+                .OrderBy(c => c.Name)
                 .ToList();
 
             var record = new StoreViewModel()
             {
-                ProductList = products
+                ProductList = products,
+                CategoryList = categories
             };
 
             return View(record);

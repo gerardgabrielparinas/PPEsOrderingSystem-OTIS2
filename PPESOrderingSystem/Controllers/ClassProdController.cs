@@ -9,6 +9,7 @@ using PPEsOrderingSystem.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using System.IO;
+using Microsoft.EntityFrameworkCore;
 
 namespace PPEsOrderingSystem.Controllers
 {
@@ -24,7 +25,7 @@ namespace PPEsOrderingSystem.Controllers
 
         public IActionResult Index()
         {
-            var list = _context.Class.ToList();
+            var list = _context.Class.Include(p => p.category).ToList();
             return View(list);
         }
 
@@ -36,12 +37,18 @@ namespace PPEsOrderingSystem.Controllers
         [HttpPost]
         public IActionResult Create(ClassProducts record, IFormFile ImagePath)
         {
+            var selectedCategory = _context.Categories
+                .Where(c => c.CatId == record.Catid).SingleOrDefault();
+
             var item = new ClassProducts()
             {
                 ProductName = record.ProductName,
                 Description = record.Description,
                 Price = record.Price,
-                DateAdded = DateTime.Now
+                ImagePath = record.ImagePath,
+                DateAdded = DateTime.Now,
+                category = selectedCategory,
+                Catid = record.Catid
 
             };
 
@@ -84,13 +91,19 @@ namespace PPEsOrderingSystem.Controllers
 
         [HttpPost]
         public IActionResult Edit(int? id, ClassProducts record)
-        {
+        { 
             var item = _context.Class.Where(i => i.ProductID == id).SingleOrDefault();
+
+            var selectedCategory = _context.Categories
+                .Where(c => c.CatId == record.Catid).SingleOrDefault();
 
             item.ProductName = record.ProductName;
             item.Description = record.Description;
             item.Price = record.Price;
+            item.ImagePath = record.ImagePath;
             item.DateModified = DateTime.Now;
+            item.category = selectedCategory;
+            item.Catid = record.Catid;
 
             _context.Class.Update(item);
             _context.SaveChanges();

@@ -20,6 +20,8 @@ namespace Login_Registration_Page.Data
 
         public DbSet<ClassProducts> Class { get; set; }
 
+        public DbSet<Category> Categories { get; set; }
+
         public DbSet<Contact> Contacts { get; set; }
     }
 }

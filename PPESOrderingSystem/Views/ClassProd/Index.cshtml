@@ -4,10 +4,10 @@
     ViewData["Title"] = "Index";
 }
 
-<center class="fa fa-list"> List of Products</center>
+<center> List of Products</center>
 
 <p>
-    <a class="tn btn-sm btn-info fa fa-android" asp-action="Create">
+    <a class="btn btn-info" asp-action="Create">
         Add new Products
     </a>
 </p>
@@ -36,36 +36,48 @@
     <tbody>
         @foreach (var item in Model)
         {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.ProductName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Description)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Price)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DateAdded)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DateModified)
-            </td>
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProductName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Price)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DateAdded)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DateModified)
+                </td>
 
-            <td>
-                <a class="btn btn-sm btn-info fa fa-edit" asp-action="Edit" asp-route-id="@item.ProductID">
-                    Edit
-                </a>
+                <td>
+                    <a class="btn btn-sm btn-info" asp-action="Edit" asp-route-id="@item.ProductID">
+                        <i class="fa fa-edit"></i>
+                    </a>
 
-                <a class="btn btn-sm btn-danger fa fa-remove" asp-action="Delete" asp-route-id="@item.ProductID"
-                   onclick='return confirm("Are you Sure?");'>
-                    Delete
-                </a>
+                    <a class="btn btn-sm btn-danger" asp-action="Delete" asp-route-id="@item.ProductID"
+                       onclick='return confirm("Are you Sure?");'>
+                        <i class="fa fa-remove"></i>
+                    </a>
 
-                <a class="btn btn-info fa fa-list" asp-action="Buy" asp-route-id="@item.ProductID">Buy Now</a>
-            </td>
-        </tr>
+                    <a class="btn btn-sm btn-info" asp-controller="Cart" asp-action="Buy" asp-route-id="@item.ProductID">
+                        <i class="fa fa-info"></i>
+                    </a>
+                </td>
+            </tr>
         }
     </tbody>
 </table>
+
+@section Scripts{
+    <script src="~/lib/datatables/js/jquery.dataTables.js"></script>
+    <script src="~/lib/datatables/js/dataTables.bootstrap4.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#records').DataTable();
+        });
+    </script>
+}

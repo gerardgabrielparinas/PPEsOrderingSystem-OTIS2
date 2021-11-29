@@ -23,14 +23,14 @@ namespace PPEsOrderingSystem.Controllers
             return View(roles);
         }
 
-        [Authorize(Policy = "rolecreation")]
+        //[Authorize(Policy = "rolecreation")]
         public IActionResult Create()
         {
             return View(new IdentityRole());
         }
 
         [HttpPost]
-        [Authorize(Policy = "rolecreation")]
+        //[Authorize(Policy = "rolecreation")]
         public async Task<IActionResult> Create(IdentityRole role)
         {
             await roleManager.CreateAsync(role);

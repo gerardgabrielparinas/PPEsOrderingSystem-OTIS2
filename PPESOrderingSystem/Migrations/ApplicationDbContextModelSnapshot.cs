@@ -259,12 +259,30 @@ namespace PPEsOrderingSystem.Migrations
                     b.ToTable("AspNetUserTokens");
                 });
 
+            modelBuilder.Entity("PPEsOrderingSystem.Models.Category", b =>
+                {
+                    b.Property<int>("CatId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("CatId");
+
+                    b.ToTable("Categories");
+                });
+
             modelBuilder.Entity("PPEsOrderingSystem.Models.ClassProducts", b =>
                 {
                     b.Property<int>("ProductID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int?>("Catid")
+                        .HasColumnType("int");
 
                     b.Property<DateTime>("DateAdded")
                         .HasColumnType("datetime2");
@@ -285,7 +303,12 @@ namespace PPEsOrderingSystem.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int?>("categoryCatId")
+                        .HasColumnType("int");
+
                     b.HasKey("ProductID");
+
+                    b.HasIndex("categoryCatId");
 
                     b.ToTable("Class");
                 });
@@ -366,6 +389,15 @@ namespace PPEsOrderingSystem.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("PPEsOrderingSystem.Models.ClassProducts", b =>
+                {
+                    b.HasOne("PPEsOrderingSystem.Models.Category", "category")
+                        .WithMany()
+                        .HasForeignKey("categoryCatId");
+
+                    b.Navigation("category");
                 });
 #pragma warning restore 612, 618
         }

@@ -1,14 +1,15 @@
 ﻿@model PPEsOrderingSystem.Models.ClassProducts
-
+@inject Login_Registration_Page.Data.ApplicationDbContext _context;
 @{
     ViewData["Title"] = "Edit";
+    var categoryList = _context.Categories.ToList();
 }
 
-<h1 class="fa fa-edit">Edit Product</h1>
-<li class="fa-li fa fa-flag-checkered">Item</li>
+<h1>Edit Product</h1>
+
 <hr />
 <div class="row">
-    <div class="col-md-4" style="background-color:moccasin">
+    <div class="col-md-4" style="background-color:white">
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="ProductID" />
@@ -32,17 +33,21 @@
                 <input asp-for="ImagePath" class="form-control" type="file" accept="image/*" />
                 <span asp-validation-for="ImagePath" class="text-danger"></span>
             </div>
-            <div class="form-group fa fa-save">
-                <input type="submit" value="Save" class="btn btn-primary" />
+            <div class="form-group">
+                <label class="control-label">Supplier</label>
+                <select asp-for="Catid" class="form-control"
+                        asp-items="@(new SelectList(categoryList, "CatId", "Name"))" required>
+                </select>
+                <span asp-validation-for="Catid" class="text-danger"></span>
+            </div>
+            <div class="form-group" style="display: inline-block; margin-top: 20px;">
+                <input type="submit" value="Save" class="btn btn-info" />
+                <a class="btn btn-info" asp-action="Index">
+                    Back to Product List
+                </a>
             </div>
         </form>
     </div>
-</div>
-
-<div>
-    <a class="tn btn-sm btn-info fa fa-backward" asp-action="Index">
-        Back to Product List
-    </a>
 </div>
 
 @section Scripts {
