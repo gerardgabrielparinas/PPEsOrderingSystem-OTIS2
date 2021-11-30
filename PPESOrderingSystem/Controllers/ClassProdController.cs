@@ -13,7 +13,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace PPEsOrderingSystem.Controllers
 {
-    [Authorize(Roles = "Admin,Supplier")]
+    
     public class ClassProdController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -22,18 +22,20 @@ namespace PPEsOrderingSystem.Controllers
             _context = context;
         }
 
-
+        [Authorize(Roles = "Admin,Supplier")]
         public IActionResult Index()
         {
             var list = _context.Class.Include(p => p.category).ToList();
             return View(list);
         }
 
+        [Authorize(Roles = "Admin,Supplier")]
         public IActionResult Create()
         {
             return View();
         }
 
+        [Authorize(Roles = "Admin,Supplier")]
         [HttpPost]
         public IActionResult Create(ClassProducts record, IFormFile ImagePath)
         {
@@ -72,6 +74,7 @@ namespace PPEsOrderingSystem.Controllers
             return RedirectToAction("Index");
         }
 
+        [Authorize(Roles = "Admin,Supplier")]
         public IActionResult Edit(int? id)
         {
             if (id == null)
@@ -89,6 +92,7 @@ namespace PPEsOrderingSystem.Controllers
             return View(item);
         }
 
+        [Authorize(Roles = "Admin,Supplier")]
         [HttpPost]
         public IActionResult Edit(int? id, ClassProducts record)
         { 
@@ -111,6 +115,7 @@ namespace PPEsOrderingSystem.Controllers
             return RedirectToAction("Index");
         }
 
+        [Authorize(Roles = "Admin,Supplier")]
         public IActionResult Delete(int? id)
         {
 
