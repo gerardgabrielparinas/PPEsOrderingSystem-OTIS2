@@ -25,5 +25,7 @@ namespace Login_Registration_Page.Data
         public DbSet<Contact> Contacts { get; set; }
 
         public DbSet<Details> Details { get; set; }
+
+        public DbSet<PrintMeClass> PrintMeClass { get; set; }
     }
 }

@@ -8221,11 +8221,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gabriel\\Source\\Repos\\gerardgabrielparinas\\PPEsOrderingSystem-OTIS2\\PPESOrderingSystem\\PPEsOrderingSystem.csproj",
+      "projectUniqueName": "C:\\Users\\gabriel\\Desktop\\PPEsOrderingSystem-OTIS2\\PPESOrderingSystem\\PPEsOrderingSystem.csproj",
       "projectName": "PPEsOrderingSystem",
-      "projectPath": "C:\\Users\\gabriel\\Source\\Repos\\gerardgabrielparinas\\PPEsOrderingSystem-OTIS2\\PPESOrderingSystem\\PPEsOrderingSystem.csproj",
+      "projectPath": "C:\\Users\\gabriel\\Desktop\\PPEsOrderingSystem-OTIS2\\PPESOrderingSystem\\PPEsOrderingSystem.csproj",
       "packagesPath": "C:\\Users\\gabriel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gabriel\\Source\\Repos\\gerardgabrielparinas\\PPEsOrderingSystem-OTIS2\\PPESOrderingSystem\\obj\\",
+      "outputPath": "C:\\Users\\gabriel\\Desktop\\PPEsOrderingSystem-OTIS2\\PPESOrderingSystem\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\gabriel\\AppData\\Roaming\\NuGet\\NuGet.Config",
