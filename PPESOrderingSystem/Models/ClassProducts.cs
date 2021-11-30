@@ -10,7 +10,7 @@ namespace PPEsOrderingSystem.Models
 {
     public class ClassProducts
     {
-        private readonly ApplicationDbContext _context;
+        
         [Key]
         public int ProductID { get; set; }
 
@@ -33,7 +33,7 @@ namespace PPEsOrderingSystem.Models
 
         public virtual Category category { get; set; }
 
-        public int? Catid { get; set; }
+        public int? Catid { get; set; }        
     }
 
     public class Category

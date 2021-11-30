@@ -64,5 +64,10 @@ namespace PPEsOrderingSystem.Controllers
             }
             return View("Index", await productquery.AsNoTracking().ToListAsync());
         }
+
+        public IActionResult ThankYou()
+        {
+            return View();
+        }
     }
 }

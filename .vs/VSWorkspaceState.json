@@ -4,6 +4,7 @@
     "\\PPESOrderingSystem",
     "\\PPESOrderingSystem\\Controllers",
     "\\PPESOrderingSystem\\Data",
+    "\\PPESOrderingSystem\\Helpers",
     "\\PPESOrderingSystem\\Models",
     "\\PPESOrderingSystem\\Views",
     "\\PPESOrderingSystem\\Views\\Contact"

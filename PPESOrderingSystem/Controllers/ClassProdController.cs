@@ -131,5 +131,35 @@ namespace PPEsOrderingSystem.Controllers
 
             return RedirectToAction("Index");
         }
+
+
+        public IActionResult Details(int? id)
+        {
+            if (id == null)
+            {
+                return RedirectToAction("Index");
+            }
+
+            var item = _context.Class.Where(i => i.ProductID == id).SingleOrDefault();
+
+            if (item == null)
+            {
+                return RedirectToAction("Index");
+            }
+
+            return View(item);
+        }
+
+        string BindDataTable(int? id)
+        {
+            var item = _context.Class.Where(i => i.ProductID == id).SingleOrDefault();
+
+            string table = "<table>";
+            table += "<tr><td>Name: </td></tr><tr><td>" + item.ProductName + "</td></tr>";
+            table += "<tr><td>Description: </td></tr><tr><td>" + item.Description + "</td></tr>";
+            table += "</table>";
+            return table;
+        }
+
     }
 }

@@ -7,52 +7,72 @@
 <body style="background-color: #c0a1ef;">
     <div class="text-center">
         <h1 class="display-4 text-white">Welcome to our Store</h1>
+    </div>
+    
+    <div style="position: absolute; right: 100px; top: 110px;">
+        <!-- Example single danger button -->
+        <a class="btn btn-danger dropdown-toggle text-dark" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color: #c0a1ef;">
+            Your Cart
+        </a>
+        <div class="dropdown-menu">
+            @foreach (var item in Model.ProductList.OrderBy(p => p.Price).ToList())
+            {
+                <a asp-controller="ClassProd" asp-action="Details" class="dropdown-item" asp-route-id="@item.ProductID">@(item.ProductName)</a>
+            }
+            <div class="dropdown-divider"></div>
+            <a asp-controller="Store" asp-action="ThankYou">Checkout</a>
+        </div>
+    </div>
 
-        <div class="col-xl-3">
-            <div class="card">
-                <div class="list-group">
-                    <a href="~/Store"
-                       class="list-group-item active d-flex justify-content-between align-items-center"
-                       style="text-decoration:none;"
-                       aria-current="true">
-                        All Categories
-                        <span class="badge badge-info badge-pill">
-                            @Model.ProductList.Count
-                        </span>
-                    </a>
-                    @foreach (var item in Model.CategoryList)
-                    {
-                        var totalRecords = _context.Class
-                            .Where(p => p.Catid == item.CatId)
-                            .ToList().Count;
-        <a href="~/Store?c=@(item.CatId)"
-           class="list-group-item d-flex justify-content-between align-items-center"
-           style="text-decoration:none;">
-            @item.Name
-            <span class="badge badge-info badge-pill">
-                @totalRecords
-            </span>
-        </a>}
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-3">
+                <div class="card" style="margin-top: 20px;">
+                    <div class="list-group">
+                        <a href="~/Store"
+                           class="list-group-item active d-flex justify-content-between align-items-center"
+                           style="text-decoration:none;"
+                           aria-current="true">
+                            All Categories
+                            <span class="badge badge-info badge-pill">
+                                @Model.ProductList.Count
+                            </span>
+                        </a>
+                        @foreach (var item in Model.CategoryList)
+                        {
+                            var totalRecords = _context.Class
+                                .Where(p => p.Catid == item.CatId)
+                                .ToList().Count;
+                            <a href="~/Store?c=@(item.CatId)"
+                               class="list-group-item d-flex justify-content-between align-items-center"
+                               style="text-decoration:none;">
+                                @item.Name
+                                <span class="badge badge-info badge-pill">
+                                    @totalRecords
+                                </span>
+                            </a>}
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="col-xl-9">
-            <div class="row">
+            <div class="col-xl-9">
+                <div class="row">
 
-                @foreach (var item in Model.ProductList.OrderBy(p => p.Price).ToList())
-                {
-                    <div class="col-sm-6" style="width: 27rem; padding-left: 100px; margin-top: 40px;">
-                        <div class="card" style="width: 16rem;">
-                            <img class="card-img-top" src="~/img/products/@(item.ImagePath)" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">@(item.ProductName)</h5>
-                                <p class="card-text">@(item.Description)</p>
-                                <a href="#" class="btn btn-primary">View Product</a>
+                    @foreach (var item in Model.ProductList.OrderBy(p => p.Price).ToList())
+                    {
+                        <div class="col-4">
+                            <div class="card" style="margin-top: 20px;">
+                                <img class="card-img-top" src="~/img/products/@(item.ImagePath)" alt="Card image cap"
+                                     style="height:200px;object-fit:cover;object-position:center;">
+                                <div class="card-body">
+                                    <h5 class="card-title">@(item.ProductName)</h5>
+                                    <p class="card-text">₱ @(item.Price)</p>
+                                    <a class="btn btn-primary" asp-controller="ClassProd" asp-action="Details" asp-route-id="@item.ProductID">View Product</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                }
+                    }
+                </div>
             </div>
         </div>
     </div>

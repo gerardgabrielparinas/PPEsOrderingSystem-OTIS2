@@ -1,0 +1,42 @@
+﻿@model PPEsOrderingSystem.Models.ClassProducts
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Product Details</h1>
+
+<hr />
+
+    
+            
+<div class="col-md-4">
+    <label asp-for="ProductName" class="control-label"></label>
+    <input readonly asp-for="ProductName" class="form-control" />
+    <span asp-validation-for="ProductName" class="text-danger"></span>
+</div>            
+      
+<div style="margin-top: 20px;">
+    <label asp-for="Description" class="control-label"></label>
+    <textarea readonly cols="100" id="Description" asp-for="Description" class="ckeditor" style=" resize: none; width: 95vw; height: 85vh;"></textarea>
+    <span asp-validation-for="Description" class="text-danger"></span>
+</div>
+      
+<a style="margin-top: 20px;" class="btn btn-info" asp-controller="Store" asp-action="Index">
+    Back to Homepage
+</a>
+            
+    
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/js/ckeditor/ckeditor.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            CKEDITOR.replace('#Description');
+        });
+    </script>
+}

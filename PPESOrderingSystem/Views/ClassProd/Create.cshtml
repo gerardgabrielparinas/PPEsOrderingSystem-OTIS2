@@ -7,6 +7,7 @@
 
 <link href="~/lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
 <link href="~/lib/froala_editor_4.0.7/css/froala_editor.css" rel="stylesheet" />
+
 <h1> Add Products</h1>
 
 
@@ -23,7 +24,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="Description" class="control-label"></label>
-                <textarea id="edit" asp-for="Description" class="form-control"></textarea>
+                <textarea id="Description" asp-for="Description" class="ckeditor"></textarea>
                 <span asp-validation-for="Description" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -59,15 +60,11 @@
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 
     <script src="~/lib/jquery/dist/jquery.js"></script>
-    <script src="~/lib/froala_editor_4.0.7/js/froala_editor.min.js"></script>
+    <script src="~/js/ckeditor/ckeditor.js"></script>
 
     <script>
-
-        $(function () {
-            $('#edit').editable({
-                inlinemode: false
-            })
+        $(document).ready(function () {
+            CKEDITOR.replace('#Description');
         });
-
     </script>
 }
