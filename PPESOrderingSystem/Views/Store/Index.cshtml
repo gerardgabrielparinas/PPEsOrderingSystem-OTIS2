@@ -8,21 +8,6 @@
     <div class="text-center">
         <h1 class="display-4 text-white">Welcome to our Store</h1>
     </div>
-    
-    <div style="position: absolute; right: 100px; top: 110px;">
-        <!-- Example single danger button -->
-        <a class="btn btn-danger dropdown-toggle text-dark" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color: #c0a1ef;">
-            Your Cart
-        </a>
-        <div class="dropdown-menu">
-            @foreach (var item in Model.ProductList.OrderBy(p => p.Price).ToList())
-            {
-                <a asp-controller="ClassProd" asp-action="Details" class="dropdown-item" asp-route-id="@item.ProductID">@(item.ProductName)</a>
-            }
-            <div class="dropdown-divider"></div>
-            <a asp-controller="Store" asp-action="ThankYou">Checkout</a>
-        </div>
-    </div>
 
     <div class="container">
         <div class="row">

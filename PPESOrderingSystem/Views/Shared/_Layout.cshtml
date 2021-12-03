@@ -28,14 +28,26 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Contact" asp-action="Create"> Contact Us </a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="PrintMe" asp-action="Print"> View Report </a>
+                        </li>
+                        <li class="nav-item">
                             @if (User.IsInRole("Admin") || User.IsInRole("Supplier"))
                             {
                                 <a id="seller" class="nav-link text-dark" asp-area="" asp-controller="ClassProd" asp-action="Index">View your Store</a>
                             }
                         </li>
+                        <li class="nav-item">
+                            @if (User.IsInRole("Admin") || User.IsInRole("Supplier"))
+                            {
+                                <a id="seller" class="nav-link text-dark" asp-area="" asp-controller="SupplierInfo" asp-action="Index">View Suppliers</a>
+                            }
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="ClassProd" asp-action="Cart"> View Cart </a>
+                        </li>
                     </ul>
                     <div class="logout">
-                        <a asp-area="Identity" asp-page="/Account/Logout" button type="submit" class="btn btn-danger" style="width: 250px; position: absolute; left: 75vw; top: 3vh;">Logout</a>
+                        <a asp-area="Identity" asp-page="/Account/Logout" button type="submit" class="btn btn-danger" style="width: 100px; position: absolute; left: 85vw; top: 3vh;">Logout</a>
                     </div>
                     <!--
                     <form method="get" asp-controller="Store" asp-action="Search">

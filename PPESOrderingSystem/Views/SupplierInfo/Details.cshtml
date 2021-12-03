@@ -1,0 +1,25 @@
+﻿@model PPEsOrderingSystem.Models.SupplierInfo
+@using System.Web
+@{
+    ViewData["Title"] = "Details";
+}
+
+
+
+
+<div class="col-md-4">
+    <h1>Supplier Details</h1><br /><br />
+    <hr />
+    <h5>Contact Number:</h5>
+    <p>@Model.ContactNumber</p><br />
+    <h5>Email Address:</h5>
+    <p>@Model.Email</p><br />
+    <h5>Social Media Account/s:</h5>
+    <p>@Html.DisplayFor(modelItem => Model.SocialMedia)</p><br />
+    <h5>Supplier Address:</h5>
+    <p>@Model.Address</p><br />
+</div>
+
+<a style="margin-top: 20px;" class="btn btn-info" asp-controller="Store" asp-action="Index">
+    Back to Homepage
+</a>

@@ -1644,3 +1644,9 @@ C:\Users\gabriel\Desktop\PPEsOrderingSystem-OTIS2\PPESOrderingSystem\obj\Debug\n
 C:\Users\gabriel\Desktop\PPEsOrderingSystem-OTIS2\PPESOrderingSystem\obj\Debug\net5.0\PPEsOrderingSystem.Views.pdb
 C:\Users\gabriel\Desktop\PPEsOrderingSystem-OTIS2\PPESOrderingSystem\obj\Debug\net5.0\PPEsOrderingSystem.csproj.CopyComplete
 C:\Users\gabriel\Desktop\PPEsOrderingSystem-OTIS2\PPESOrderingSystem\obj\Debug\net5.0\PPEsOrderingSystem.genruntimeconfig.cache
+C:\Users\gabriel\Source\Repos\gerardgabrielparinas\PPEsOrderingSystem-OTIS2\PPESOrderingSystem\obj\Debug\net5.0\Razor\Views\PrintMe\Print.cshtml.g.cs
+C:\Users\gabriel\Source\Repos\gerardgabrielparinas\PPEsOrderingSystem-OTIS2\PPESOrderingSystem\obj\Debug\net5.0\Razor\Views\ClassProd\Cart.cshtml.g.cs
+C:\Users\gabriel\Source\Repos\gerardgabrielparinas\PPEsOrderingSystem-OTIS2\PPESOrderingSystem\obj\Debug\net5.0\Razor\Views\SupplierInfo\Create.cshtml.g.cs
+C:\Users\gabriel\Source\Repos\gerardgabrielparinas\PPEsOrderingSystem-OTIS2\PPESOrderingSystem\obj\Debug\net5.0\Razor\Views\SupplierInfo\Edit.cshtml.g.cs
+C:\Users\gabriel\Source\Repos\gerardgabrielparinas\PPEsOrderingSystem-OTIS2\PPESOrderingSystem\obj\Debug\net5.0\Razor\Views\SupplierInfo\Index.cshtml.g.cs
+C:\Users\gabriel\Source\Repos\gerardgabrielparinas\PPEsOrderingSystem-OTIS2\PPESOrderingSystem\obj\Debug\net5.0\Razor\Views\SupplierInfo\Details.cshtml.g.cs

@@ -363,6 +363,77 @@ namespace PPEsOrderingSystem.Migrations
                     b.ToTable("Details");
                 });
 
+            modelBuilder.Entity("PPEsOrderingSystem.Models.PrintMeClass", b =>
+                {
+                    b.Property<int>("ProductID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int?>("Catid")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("DateAdded")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DateModified")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImagePath")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Price")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ProductName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("categoryCatId")
+                        .HasColumnType("int");
+
+                    b.HasKey("ProductID");
+
+                    b.HasIndex("categoryCatId");
+
+                    b.ToTable("PrintMeClass");
+                });
+
+            modelBuilder.Entity("PPEsOrderingSystem.Models.SupplierInfo", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Address")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("Catid")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ContactNumber")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("categoryCatId")
+                        .HasColumnType("int");
+
+                    b.HasKey("ID");
+
+                    b.HasIndex("categoryCatId");
+
+                    b.ToTable("SupplierInfo");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -415,6 +486,24 @@ namespace PPEsOrderingSystem.Migrations
                 });
 
             modelBuilder.Entity("PPEsOrderingSystem.Models.ClassProducts", b =>
+                {
+                    b.HasOne("PPEsOrderingSystem.Models.Category", "category")
+                        .WithMany()
+                        .HasForeignKey("categoryCatId");
+
+                    b.Navigation("category");
+                });
+
+            modelBuilder.Entity("PPEsOrderingSystem.Models.PrintMeClass", b =>
+                {
+                    b.HasOne("PPEsOrderingSystem.Models.Category", "category")
+                        .WithMany()
+                        .HasForeignKey("categoryCatId");
+
+                    b.Navigation("category");
+                });
+
+            modelBuilder.Entity("PPEsOrderingSystem.Models.SupplierInfo", b =>
                 {
                     b.HasOne("PPEsOrderingSystem.Models.Category", "category")
                         .WithMany()

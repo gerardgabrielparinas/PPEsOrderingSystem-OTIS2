@@ -1,0 +1,37 @@
+﻿@model IEnumerable<PPEsOrderingSystem.Models.ClassProducts>
+
+<body>
+    <div class="text-center">
+        <h1 class="display-4 text-dark">View your Cart</h1><br />
+        <p>(Disclaimer: This isn't an actual working "Cart". It's just a workaround that displays all the registered products, which we added to keep the website still somewhat functional, because we were unfortunately unable to figure out how to implement an actual cart before the deadline.)</p>
+    </div>
+
+    @foreach (var item in Model.OrderBy(p => p.Price).ToList())
+    {
+        <div class="card mb-3" style="max-width: 1000px; margin-left: 10vw; margin-top: 10vh; background-color: #c0a1ef;">
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                    <img class="card-img" src="~/img/products/@(item.ImagePath)" alt="Card image cap"
+                         style="height:300px; width: 100%; object-position:left;">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <div style="margin-top: 80px;">
+                            <h5 class="card-title">@(item.ProductName)</h5>
+                            <p class="card-text">@(item.Price.ToString("N"))</p>
+                            <a asp-controller="ClassProd" asp-action="Details" asp-route-id="@item.ProductID" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+    <div class="card text-white bg-dark" style="max-width: 1000px; margin-left: 10vw;">
+        <div class="card-body">Total price:&nbsp;&nbsp;&nbsp; ₱ @(Model.Sum(i => i.Price).ToString("N"))</div>
+    </div>
+
+    <a class="btn btn-info" style="margin-left: 10vw; margin-top: 10vh; width: 30vw;" asp-controller="Store" asp-action="ThankYou">
+        Checkout
+    </a>
+</body>

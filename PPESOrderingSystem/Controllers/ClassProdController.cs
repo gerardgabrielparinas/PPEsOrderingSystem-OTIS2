@@ -166,5 +166,11 @@ namespace PPEsOrderingSystem.Controllers
             return table;
         }
 
+        public IActionResult Cart()
+        {
+            var list = _context.Class.Include(p => p.category).ToList();
+            return View(list);
+        }
+
     }
 }

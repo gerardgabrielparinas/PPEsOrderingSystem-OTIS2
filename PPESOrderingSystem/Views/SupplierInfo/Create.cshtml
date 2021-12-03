@@ -1,0 +1,61 @@
+﻿@model PPEsOrderingSystem.Models.SupplierInfo
+@inject Login_Registration_Page.Data.ApplicationDbContext _context;
+@{
+    ViewData["Title"] = "Create";
+    var categoryList = _context.Categories.ToList();
+}
+
+<link href="~/lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
+<link href="~/lib/froala_editor_4.0.7/css/froala_editor.css" rel="stylesheet" />
+
+<h1> Add Products</h1>
+
+
+<hr />
+<div class="row">
+    <div class="col-md-4"
+         style="background-color:white">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="ContactNumber" class="control-label"></label>
+                <input asp-for="ContactNumber" class="form-control" />
+                <span asp-validation-for="ContactNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input id="Description" asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SocialMedia" class="control-label"></label>
+                <input id="Description" asp-for="SocialMedia" class="form-control" />
+                <span asp-validation-for="SocialMedia" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Address" class="control-label"></label>
+                <textarea asp-for="Address" class="form-control"></textarea>
+                <span asp-validation-for="Address" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Supplier</label>
+                <select asp-for="Catid" class="form-control"
+                        asp-items="@(new SelectList(categoryList, "CatId", "Name"))" required>
+                </select>
+                <span asp-validation-for="Catid" class="text-danger"></span>
+            </div>
+            <div class="form-group" style="margin-top: 20px; display: inline-block;">
+                <input type="submit" value=" Create" class="btn btn-info" />
+                <a class="btn btn-info" asp-action="Index">
+                    Back
+                </a>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

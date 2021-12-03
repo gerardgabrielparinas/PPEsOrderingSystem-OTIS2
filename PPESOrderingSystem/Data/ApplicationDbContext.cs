@@ -27,5 +27,7 @@ namespace Login_Registration_Page.Data
         public DbSet<Details> Details { get; set; }
 
         public DbSet<PrintMeClass> PrintMeClass { get; set; }
+
+        public DbSet<SupplierInfo> SupplierInfo { get; set; }
     }
 }

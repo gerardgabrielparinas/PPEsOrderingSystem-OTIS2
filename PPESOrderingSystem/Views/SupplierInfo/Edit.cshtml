@@ -1,0 +1,55 @@
+﻿@model PPEsOrderingSystem.Models.SupplierInfo
+@inject Login_Registration_Page.Data.ApplicationDbContext _context;
+@{
+    ViewData["Title"] = "Edit";
+    var categoryList = _context.Categories.ToList();
+}
+
+<h1>Edit Product</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4" style="background-color:white">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="ID" />
+            <div class="form-group">
+                <label asp-for="ContactNumber" class="control-label"></label>
+                <input asp-for="ContactNumber" class="form-control" />
+                <span asp-validation-for="ContactNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input id="Description" asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SocialMedia" class="control-label"></label>
+                <input id="Description" asp-for="SocialMedia" class="form-control" />
+                <span asp-validation-for="SocialMedia" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Address" class="control-label"></label>
+                <textarea asp-for="Address" class="form-control"></textarea>
+                <span asp-validation-for="Address" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Supplier</label>
+                <select asp-for="Catid" class="form-control"
+                        asp-items="@(new SelectList(categoryList, "CatId", "Name"))" required>
+                </select>
+                <span asp-validation-for="Catid" class="text-danger"></span>
+            </div>
+            <div class="form-group" style="display: inline-block; margin-top: 20px;">
+                <input type="submit" value="Save" class="btn btn-info" />
+                <a class="btn btn-info" asp-action="Index">
+                    Back to Product List
+                </a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -7,7 +7,9 @@
     "\\PPESOrderingSystem\\Helpers",
     "\\PPESOrderingSystem\\Models",
     "\\PPESOrderingSystem\\Views",
-    "\\PPESOrderingSystem\\Views\\Contact"
+    "\\PPESOrderingSystem\\Views\\ClassProd",
+    "\\PPESOrderingSystem\\Views\\Contact",
+    "\\PPESOrderingSystem\\Views\\PrintMe"
   ],
   "SelectedNode": "\\PPESOrderingSystem\\PPEsOrderingSystem.sln",
   "PreviewInSolutionExplorer": false

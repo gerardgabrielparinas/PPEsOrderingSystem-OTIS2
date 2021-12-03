@@ -1,0 +1,82 @@
+﻿@model IEnumerable<PPEsOrderingSystem.Models.SupplierInfo>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<center> List of Products</center>
+
+<p>
+    <a class="btn btn-info" asp-action="Create">
+        Add new Products
+    </a>
+</p>
+<table id="records" class="table table-striped table-hover table-bordered table-sm"
+       style="background-color:whitesmoke">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ContactNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SocialMedia)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Address)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Catid)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ContactNumber)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SocialMedia)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Address)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Catid)
+                </td>
+                <td>
+                    <a class="btn btn-sm btn-info" asp-action="Edit" asp-route-id="@item.ID">
+                        <i class="fa fa-edit"></i>
+                    </a>
+
+                    <a class="btn btn-sm btn-danger" asp-action="Delete" asp-route-id="@item.ID"
+                       onclick='return confirm("Are you Sure?");'>
+                        <i class="fa fa-remove"></i>
+                    </a>
+
+                    <a class="btn btn-sm btn-info" asp-action="Details" asp-route-id="@item.Catid">
+                        <i class="fa fa-info"></i>
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@section Scripts{
+    <script src="~/lib/datatables/js/jquery.dataTables.js"></script>
+    <script src="~/lib/datatables/js/dataTables.bootstrap4.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#records').DataTable();
+        });
+    </script>
+}
